@@ -2,8 +2,8 @@
 
 Необходимо выполнить и предоставить на проверку следующие задачи:
 
-1. [Работа с числами](https://github.com/netology-code/jd-homeworks/blob/master/streams/task1/README.md);
-2. [Перепись населения](https://github.com/netology-code/jd-homeworks/blob/master/streams/task2/README.md);
+1. [Работа с числами](https://github.com/vOrzee/ru.netology.javacore.hw1.2_StreamAPI.ThreadsRepeatedCallsBasicMethods/tree/WorkingWithNumbers);
+2. [Перепись населения](https://github.com/vOrzee/ru.netology.javacore.hw1.2_StreamAPI.ThreadsRepeatedCallsBasicMethods/tree/PopulationCensus);
 
 =======
 
