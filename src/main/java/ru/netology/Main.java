@@ -18,6 +18,24 @@ public class Main {
             );
         }
 
+        List<Person> minors =
+                persons.stream()
+                        .filter(person -> person.getAge() < 18)
+                        .toList();
 
+        List<String> conscripts =
+                persons.stream()
+                        .filter(person -> person.getAge() >= 18 && person.getAge() < 27)
+                        .map(Person::getFamily)
+                        .toList();
+
+        List<Person> workableWithHigherEducation =
+                persons.stream()
+                        .filter(person ->
+                                person.getAge() >= 18 && person.getAge() < 65
+                                        && person.getEducation().equals(Education.HIGHER)
+                                        && (person.getSex().equals(Sex.MAN) || (person.getSex().equals(Sex.WOMAN) && person.getAge() < 60))
+                        ).sorted(Comparator.comparing(Person::getFamily))
+                        .toList();
     }
 }
